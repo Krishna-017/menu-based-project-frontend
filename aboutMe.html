@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Krishika Samtani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif; /* Updated font for a modern look */
+        }
+
+        body {
+            background-color: #1A1A2E; /* Dark background for a sleek look */
+            color: #EAEAEA; /* Light text color for readability */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #162447; /* Slightly lighter than the body for contrast */
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #EAEAEA;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #E43F5A; /* Hover color for accent */
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #E43F5A;
+            left: 50%;
+            bottom: 5px;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .container {
+            margin-top: 80px; /* Space for the fixed nav bar */
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #162447; /* Container background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #E43F5A; /* Accent color for the heading */
+        }
+
+        .typewriter {
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .typewriter .static-text {
+            color: #EAEAEA;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .typewriter .dynamic-text {
+            margin-left: 8px;
+            line-height: 24px;
+            height: 24px;
+            overflow: hidden;
+        }
+
+        .dynamic-text li {
+            list-style: none;
+            color: #E43F5A; /* Accent color for dynamic text */
+            font-size: 24px;
+            font-weight: 500;
+            position: relative;
+            top: 0;
+            animation: slide 20s steps(5) infinite;
+        }
+
+        @keyframes slide {
+            100% {
+                top: -120px;
+            }
+        }
+
+        .dynamic-text li::after {
+            content: "";
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-left: 2px solid #E43F5A;
+            animation: typing 4s steps(15) infinite;
+            background-color: #1A1A2E;
+        }
+
+        @keyframes typing {
+            40%,
+            60% {
+                left: calc(100%);
+            }
+            100% {
+                left: 0;
+            }
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .photo-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #EAEAEA;
+            background-image: url('/menuWeb/myPhoto.jpg'); /* Replace 'myPhoto.jpeg' with your actual photo file */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .name-overlay {
+            color: #E43F5A;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .description {
+            margin-top: 20px;
+            color: #EAEAEA;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #EAEAEA;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #E43F5A; /* Match hover color with the theme */
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="home-link">Home</a>
+        <a href="#about" class="about-link">About</a>
+        <a href="project.html" class="projects-link">Projects</a>
+    </nav>
+    <div class="container">
+        <div class="photo-container">
+            <div class="photo-circle"></div>
+            <div class="name-overlay">Krishika Samtani</div>
+        </div>
+        <h1>About Me</h1>
+        <div class="typewriter">
+            <div class="static-text">I am</div>
+            <ul class="dynamic-text">
+                <li><span>Tech Enthusiast</span></li>
+                  <li><span>Developer</span></li>
+                <li><span>Problem Solver</span></li>
+                <li><span>Innovator</span></li>
+            </ul>
+        </div>
+        <div class="description">
+            I am Krishika Samtani, driven by a passion for innovation and technology. 
+            To me, every challenge is an opportunity to create solutions that make life easier and more connected. 
+            My journey in computer science, combined with my deep interest in Python, Linux, and Full stack. 
+              </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/krishika-samtani-45257b259" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Krishna-017" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</body>
+</html>

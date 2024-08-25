@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Krishika Samtani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1A1A2E; /* Dark background for a cohesive theme */
+            color: #EAEAEA; /* Light text color for contrast */
+            font-family: "Roboto", sans-serif; /* Consistent font family */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #162447; /* Slightly lighter than the body for contrast */
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #E43F5A; /* Accent color for title */
+        }
+
+        .navbar .nav-links a {
+            color: #EAEAEA;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #E43F5A; /* Accent color for hover */
+        }
+
+        .navbar .nav-links a.active {
+            color: #E43F5A;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            padding: 100px 20px; /* Space for the fixed navbar */
+            text-align: center;
+        }
+
+        .button-container {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .button-container button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #EAEAEA;
+            background-color: #162447;
+            border: 2px solid #E43F5A;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button-container button:hover {
+            color: #162447;
+            background-color: #E43F5A;
+            box-shadow: 0 5px 15px rgba(228, 63, 90, 0.4);
+        }
+
+        .button-container button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+            transform: scale(0);
+            transition: transform 0.5s ease;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .button-container button:hover::before {
+            transform: scale(4);
+        }
+
+        .social-icons a {
+            color: #EAEAEA;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #E43F5A;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">Projects</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About</a>
+            <a href="#" class="active">Projects</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/krishika-samtani-45257b259" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Krishna-017" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="button-container">
+            <button onclick="window.location.href='JStts.html '"> text to speech</button>
+        </div>
+        <div class="button-container">
+            <button onclick="window.location.href='jsvid.html '"> video capture</button>
+        </div>
+        <div class="button-container">
+            <button onclick="window.location.href='photoJS.html '"> photo capture</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishika Samtani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1A1A2E; /* Darker background for a modern look */
+            color: #EAEAEA; /* Light text color for contrast */
+            font-family: 'Roboto', sans-serif; /* Using a Google font for a modern look */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #162447; /* Slightly lighter background for container */
+            border-radius: 10px; /* Rounded corners for a modern feel */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #E43F5A; /* Vibrant color for heading */
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #EAEAEA;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #E43F5A; /* Accent color for underline */
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        nav a:hover {
+            color: #E43F5A; /* Match the hover color with underline */
+        }
+
+        /* Highlight the Home link by default */
+        nav a.home-link {
+            color: #E43F5A;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #EAEAEA;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #E43F5A; /* Match hover color with theme */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Krishika Samtani</h1>
+        <nav>
+            <a href="#home" class="home-link">Home</a>
+            <a href="aboutMe.html">About</a>
+            <a href="project.html">Projects</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/krishika-samtani-45257b259" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Krishna-017" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</body>
+</html>
