@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS - Krishika Samtani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1A1A2E;
+            color: #EAEAEA;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #162447;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #E43F5A;
+        }
+
+        .form-container {
+            background-color: #162447;
+            padding: 20px;
+            border: 2px solid #E43F5A;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            margin: 0 0 15px;
+            color: #EAEAEA;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            color: #EAEAEA;
+            background-color: #E43F5A;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #E43F5A;
+            box-shadow: 0 5px 15px rgba(228, 63, 90, 0.4);
+        }
+
+        .social-icons a {
+            color: #EAEAEA;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #E43F5A;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">Send SMS</div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/krishika-samtani-45257b259" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    
+    <div class="form-container">
+        <h2>Send a Text Message</h2>
+        <form action="/send_sms" method="post">
+            <input type="text" name="to" placeholder="Enter phone number" required>
+            <input type="text" name="text" placeholder="Enter your message" required>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
